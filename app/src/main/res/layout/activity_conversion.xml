@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".ConversionActivity">
+
+    <TextView
+        android:id="@+id/ress"
+        android:layout_width="253dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="530dp"
+        android:text="Résultat de Conversion"
+        android:textAlignment="center"
+        android:textColor="#000100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="86dp" />
+
+    <TextView
+        android:id="@+id/lemontant"
+        android:layout_width="273dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="70dp"
+        android:textAlignment="viewStart"
+        android:textColor="#000100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lesens"
+        android:layout_width="268dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="72dp"
+        android:textAlignment="viewStart"
+        android:textColor="#000100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lemontant" />
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="233dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="65dp"
+        android:text="convertir"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lesens" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

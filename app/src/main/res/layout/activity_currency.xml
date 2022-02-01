@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".CurrencyActivity">
+
+    <EditText
+        android:id="@+id/valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:hint="Donner un montant... "
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toeuro"
+        android:layout_width="233dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="128dp"
+        android:text="DINAR TUNISIEN --> EURO"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valeur" />
+
+    <Button
+        android:id="@+id/todinar"
+        android:layout_width="233dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="76dp"
+        android:text="EURO --> DINAR TUNISIEN"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toeuro" />
+</androidx.constraintlayout.widget.ConstraintLayout>
